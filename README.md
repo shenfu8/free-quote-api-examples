@@ -1,9 +1,9 @@
 # free-quote-api-examples
 
-免费行情接口与REST/WebSocket示例
+香港市场免费行情接口与REST/WebSocket示例
 
 ## 项目定位
-本仓库聚焦「实时行情API」接入落地，面向以下场景：
+本仓库聚焦「港股实时行情API」接入落地，面向以下场景：
 - 量化交易策略实时订阅与告警
 - 行情看板与交易终端前端展示
 - 研究系统历史 K 线回测与因子验证
@@ -34,6 +34,11 @@
 完整与最新清单请以官方页面为准：
 - [https://kun.pro/products](https://kun.pro/products)
 
+## 本仓库重点市场
+- 主区域：大中华区
+- 重点国家/市场：中国香港(HK)
+- 重点交易所：HKEX、HSI
+
 ## Quick Start
 1. 获取访问 Token 并确认鉴权方式
 2. 选择接入方式（WebSocket 或 REST）
@@ -42,21 +47,22 @@
 
 ## 最小请求示例
 ### REST 示例（历史 K 线）
-<code>GET https://kun.pro/api/history?market=KR&symbol=KRX:000040&interval=1&count=200</code>
+<code>GET https://kun.pro/api/history?market=HK&symbol=HKEX:00700&interval=1&count=200</code>
 <code>Authorization: Bearer YOUR_TOKEN</code>
 
 ### WebSocket 示例（实时订阅）
 <code>wss://kun.pro/ws?token=YOUR_TOKEN</code>
-<code>{"action":"subscribe","market":"KR","symbol":"KRX:000040"}</code>
+<code>{"action":"subscribe","market":"HK","symbol":"HKEX:00700"}</code>
 
 ## 关键词与主题
-- keyword: 实时行情API
-- topics:free-quote, stock-api, websocket, market-data
+- keyword: 港股实时行情API
+- topics:free-quote, stock-api, websocket, market-data, hk-market
 
 ## 文档与接入
 - 开发文档中心：[https://kun.pro/docs.html](https://kun.pro/docs.html)
 - 官网入口：[https://kun.pro](https://kun.pro?utm_campaign=kun_pro_api_seo&utm_content=shenfu8_free-quote-api-examples&utm_medium=readme&utm_source=github)
 - 接入咨询：请通过官网页面提交需求（支持 API 评估与接入建议）
+- Telegram：[@kunpeng](https://t.me/kunpeng)
 
 ## 推荐关键词（站点统一）
 - 鯤鵬數據 API
